@@ -1,0 +1,25 @@
+{
+  "name": "storefinder",
+  "version": "1.0.0",
+  "description": "Demonstration 'find my nearest store' locator",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glynnbird/storefinder.git"
+  },
+  "keywords": [
+    "CouchDB.Cloudant",
+    "Search"
+  ],
+  "author": "Glynn Bird <glynn.bird@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/glynnbird/storefinder/issues"
+  },
+  "homepage": "https://github.com/glynnbird/storefinder#readme",
+  "dependencies": {
+    "line-by-line": "^0.1.6"
+  }
+}
