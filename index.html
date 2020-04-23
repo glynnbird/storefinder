@@ -74,11 +74,14 @@
           findStores: function(e) {
             // find location of user, call getNearestStores when done
             this.step = 'Getting geolocation...'
-            const geoError = () => {
+            const geoError = (e) => {
+              console.log(e)
               app.error = true
             }
-            navigator.geolocation.getCurrentPosition(app.getNearestStores, geoError)
-            console.log('Find stores')
+            navigator.geolocation.getCurrentPosition((pos) => {
+              console.log(pos)
+              app.getNearestStores(pos)
+            }, geoError)
           },
           getNearestStores: async function(pos) {
 
